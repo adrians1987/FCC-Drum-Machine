@@ -1,0 +1,30 @@
+.container{
+  text-align: center;
+  margin: 50px;  
+}
+
+.drum-board{
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
+  gap: 20px;
+  grid-template-rows: 1fr 1fr 1fr;
+  margin: 50px auto;
+  width: min-content;
+}
+
+.drum-pad{
+  width: 100px;
+  height: 100px;
+  border: 2px solid black;
+  background-color: grey;
+  color: white;
+  font-size: 20px;
+  border-radius: 10px;
+  box-shadow: 4px 4px 10px greenyellow;
+  transition: all 0.2s;
+}
+
+.drum-pad:active {
+  background-color: green;
+  transform: translateY(4px);
+}
